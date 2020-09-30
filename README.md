@@ -24,7 +24,7 @@ conv1_filters = 16, conv2_filters = 32, conv3_filters = 128, fc1_units = 1024.
 Unlike LR and RNN, one advantage of CNN is that the input data doesn’t need to be flattened.
 
 The architecture of the CNN model built in the task is: 
-![CNN architecture](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/CNN%20architecture.png
+![CNN architecture](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/CNN%20architecture.png)
 
 Softmax_cross_entropy_loss is used as the loss function, and adam as the optimizer. After running 500 steps, the accuracy on the training and testing dataset are 0.109 and  0.1116 respectively.  
 
