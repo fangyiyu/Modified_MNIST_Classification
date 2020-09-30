@@ -33,7 +33,7 @@ Softmax_cross_entropy_loss is used as the loss function, and adam as the optimiz
 Parameter setting is the same as in the CNN model.
 The convolutional layer in GCN used a gating mechanism to allow the network to control what information should be propagated the hierarchy of layers. So I build the gated convolutional layer based on the mechanism below:
 
-![model](/images/logo.png)
+![CNN architecture](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/CNN%20architecture.png)
 
 The architecture of the GCN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.1406, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
 
