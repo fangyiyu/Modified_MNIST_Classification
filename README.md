@@ -28,7 +28,7 @@ The architecture of the CNN model built in the task is:
 
 Softmax_cross_entropy_loss is used as the loss function, and adam as the optimizer. After running 500 steps, the accuracy on the training and testing dataset are 0.109 and  0.1116 respectively.  
 
-#### 2.2.3 Gated Convolutional Neural Networks
+### 2.2.3 Gated Convolutional Neural Networks
 
 Parameter setting is the same as in the CNN model.
 The convolutional layer in GCN used a gating mechanism to allow the network to control what information should be propagated the hierarchy of layers. So I build the gated convolutional layer based on the mechanism below:
