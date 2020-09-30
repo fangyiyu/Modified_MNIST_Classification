@@ -30,11 +30,11 @@ Softmax_cross_entropy_loss is used as the loss function, and adam as the optimiz
 ### 2.2.3 Gated Convolutional Neural Networks
 
 Parameter setting is the same as in the CNN model.
-The convolutional layer in GCN used a gating mechanism to allow the network to control what information should be propagated the hierarchy of layers. So I built the gated convolutional layer based on the mechanism below:
+The convolutional layer in GCNN used a gating mechanism to allow the network to control what information should be propagated the hierarchy of layers. So I built the gated convolutional layer based on the mechanism below:
 
 ![Gating mechanism](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/Gating%20mechanism.png)
 
-The architecture of the GCN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.1406, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
+The architecture of the GCNN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.1406, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
 
 ### 2.2.4 Recurrent Neural Networks
 
@@ -51,7 +51,7 @@ Data augmentation was first implemented to increase the diversity of the trainin
 
 # 3. Conclusion
 
-A simple CNN, RNN or GCN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST model, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented the pretrained CNN model VGG on the dataset, and it turned out to fit the dataset well. 
+A simple CNN, RNN or GCNN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST model, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented the pretrained CNN model VGG on the dataset, and it turned out to fit the dataset well. 
 
 *References:*  
 [1] https://www.dropbox.com/sh/jn8p1pvpgjy3b9b/AABWc6ouePh2YJFZkGA9zE3ha?dl=0  
