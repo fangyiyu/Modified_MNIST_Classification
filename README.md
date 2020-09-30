@@ -45,13 +45,13 @@ After running 30 epochs, the accuracy on the training and testing dataset are 0.
 
 ### 2.2.5 VGG
 
-Apart from the vanilla CNN model, I also used a pre-trained model VGG on the dataset and got a decent performance.
+Apart from the vanilla CNN model, I also used VGG on the dataset and got a decent performance.
 
 Data augmentation was first implemented to increase the diversity of the training set, and then the VGG model was built using keras. After training for 10 epochs, the accuracy on the training and testing dataset are 0.9085 and 0.9574 respectively.
 
 # 3. Conclusion
 
-A simple CNN, RNN or GCNN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST model, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented the pretrained CNN model VGG on the dataset, and it turned out to fit the dataset well. 
+A simple CNN, RNN or GCNN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST model, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented a more sophiscated model-VGG on the dataset, and it turned out to fit the dataset well. 
 
 *References:*  
 [1] https://www.dropbox.com/sh/jn8p1pvpgjy3b9b/AABWc6ouePh2YJFZkGA9zE3ha?dl=0  
