@@ -1,15 +1,14 @@
-# Modified MNIST 
-## 1.Problem Statement
+# 1.Problem Statement
 The task is image classification for the modified MNIST dataset which contains 50000 examples for training and 10000 for testing. The task mainly aims at using basic models such as logistic regression, vanilla convolutional neural networks, recurrent neural networks on the dataset, as well as implementing a gated convolutional neural networks.  
 
-## 2.Pipeline
-### 2.1 Data preprocessing 
+# 2.Pipeline
+## 2.1 Data preprocessing 
 Including uploading data from dropbox to google colab; 
 splitting dataset into training and testing subsets; 
 the digits (x) are size-normalized and centered in a fixed-size image(64*64 pixels) with values from 0 to 255; the labels (y) are one hot encoded to feed the models.
 
-### 2.2 Model building and evaluation
-#### 2.2.1 Logistic regression
+## 2.2 Model building and evaluation
+### 2.2.1 Logistic regression
 
 Since it’s a multi-class classification problem, a softmax function is used to generate probabilities; cross entropy loss is used as the loss function and gradient descent for optimization.  
 
@@ -17,7 +16,7 @@ Parameter setting: learning_rate = 0.01; training_stes = 500; batch_size = 128.
 
 After running 500 steps, the accuracy on the training and testing dataset are 0.1953 and  0.1196 respectively.
 
-#### 2.2.2 Convolutional Neural Networks
+### 2.2.2 Convolutional Neural Networks
 
 Parameter setting: learning_rate = 0.01; trainning_steps = 500; batch_size = 128; dropout = 0.7
 conv1_filters = 16, conv2_filters = 32, conv3_filters = 128, fc1_units = 1024.
@@ -38,20 +37,20 @@ The convolutional layer in GCN used a gating mechanism to allow the network to c
 
 The architecture of the GCN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.1406, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
 
-#### 2.2.4 Recurrent Neural Networks
+### 2.2.4 Recurrent Neural Networks
 
 Parameter setting: learning_rate = 0.01; epochs=30; batch_size = 128
 A simple one layer LSTM model is built for this task with categorical_crossentropy as the loss function and rmsprop as  the optimizer.
 
 After running 30 epochs, the accuracy on the training and testing dataset are 0.3074 and  0.2955 respectively.
 
-#### 2.2.5 VGG
+### 2.2.5 VGG
 
 Apart from the vanila CNN model, I also used a pre-trained model VGG on the dataset and got a decent performance.
 
 Data augmentation was first implemented to increase the diversity of the training set, and then the VGG model was built using keras. After training for 10 epochs, the accuracy on the training and testing dataset are 0.9085 and  0.9574 respectively.
 
-## 3. Conclusion
+# 3. Conclusion
 
 A simple CNN, RNN or GCN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST model, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented the pretrained CNN model VGG on the dataset, and it turned out to fit the dataset well. 
 
