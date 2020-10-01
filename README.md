@@ -1,5 +1,5 @@
 # 1.Problem Statement
-The task is image classification for the modified MNIST dataset which contains 50000 examples for training and 10000 for testing. The task mainly aims at using basic models such as logistic regression, vanilla convolutional neural networks, recurrent neural networks on the dataset, as well as implementing a gated convolutional neural networks.  
+The task is image classification for the modified MNIST dataset which contains 50000 examples for training and 10000 for testing. The task mainly aims at using basic models such as logistic regression, vanilla convolutional neural networks, recurrent neural networks on the dataset, as well as implementing a gated convolutional neural networks model.  
 
 # 2.Pipeline
 ## 2.1 Data preprocessing 
