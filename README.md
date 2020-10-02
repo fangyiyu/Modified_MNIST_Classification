@@ -15,7 +15,7 @@ Since it’s a multi-class classification problem, a softmax function is used to
 
 Parameter setting: learning_rate = 0.01; training_stes = 500; batch_size = 128.
 
-After running 500 steps, the accuracy on the training and testing dataset are 0.1953 and 0.1196 respectively.
+After running 500 steps, the accuracy on the training and testing dataset are 0.1718 and 0.1193 respectively.
 
 ### 2.2.2 Convolutional Neural Networks
 
@@ -25,7 +25,7 @@ conv1_filters = 16, conv2_filters = 32, conv3_filters = 128, fc1_units = 1024.
 The architecture of the CNN model built in the task is: 
 ![CNN architecture](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/CNN%20architecture.png)
 
-Softmax_cross_entropy_loss is used as the loss function, and adam as the optimizer. After running 500 steps, the accuracy on the training and testing dataset are 0.109 and 0.1116 respectively.  
+Softmax_cross_entropy_loss is used as the loss function, and adam as the optimizer. After running 500 steps, the accuracy on the training and testing dataset are 0.1250 and 0.1116 respectively.  
 
 ### 2.2.3 Gated Convolutional Neural Networks
 
@@ -34,20 +34,20 @@ The convolutional layer in GCN used a gating mechanism to allow the network to c
 
 ![Gating mechanism](https://github.com/fangyiyu/Fangyi_Yu_Modified_MNIST/blob/master/Gating%20mechanism.png)
 
-The architecture of the GCN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.1406, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
+The architecture of the GCN model built in this task is the same as the CNN model above, and the loss function and optimizer are also identical. After running 500 steps, the accuracy on the training dataset is 0.0703, while when predicting using the testing dataset, it showed my GPU was out of memory even after decreasing units in the hidden layer or adding strides in the Maxpooling layers.  
 
 ### 2.2.4 Recurrent Neural Networks
 
 Parameter setting: learning_rate = 0.01; epochs=30; batch_size = 128  
 A simple one layer LSTM model is built for this task with categorical_crossentropy as the loss function and rmsprop as the optimizer.
 
-After running 30 epochs, the accuracy on the training and testing dataset are 0.3074 and 0.2955 respectively.
+After running 30 epochs, the accuracy on the training and testing dataset are 0.2582 and 0.2288respectively.
 
 ### 2.2.5 VGG
 
 Apart from the vanilla CNN model, I also used VGG on the dataset and got a decent performance.
 
-Data augmentation was first implemented to increase the diversity of the training set, and then the VGG model was built using keras. After training for 10 epochs, the accuracy on the training and testing dataset are 0.9085 and 0.9574 respectively.
+Data augmentation was first implemented to increase the diversity of the training set, and then the VGG model was built using keras. After training for 15 epochs, the accuracy on the training and testing dataset are 0.9283 and 0.9689 respectively.
 
 # 3. Conclusion
 
