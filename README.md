@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [1.Problem Statement](#1problem-statement)
+- [2.Pipeline](#2pipeline)
+  - [2.1 Data preprocessing](#21-data-preprocessing)
+  - [2.2 Model building and evaluation](#22-model-building-and-evaluation)
+    - [2.2.1 Logistic regression](#221-logistic-regression)
+    - [2.2.2 Convolutional Neural Networks](#222-convolutional-neural-networks)
+    - [2.2.3 Gated Convolutional Neural Networks](#223-gated-convolutional-neural-networks)
+    - [2.2.4 Recurrent Neural Networks](#224-recurrent-neural-networks)
+    - [2.2.5 VGG](#225-vgg)
+- [3. Conclusion](#3-conclusion)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 1.Problem Statement
 The task is image classification for the modified MNIST dataset which contains 50000 examples for training and 10000 for testing. The task mainly aims at using basic models such as logistic regression, vanilla convolutional neural networks, recurrent neural networks on the dataset, as well as implementing a gated convolutional neural networks model.  
 
