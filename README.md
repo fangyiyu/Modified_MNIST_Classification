@@ -68,7 +68,7 @@ Data augmentation was first implemented to increase the diversity of the trainin
 
 # 3. Conclusion
 
-A simple CNN, RNN or GCN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST dataset, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented a more sophiscated model-VGG on the dataset, and it turned out to fit the dataset well. 
+<summary>A simple CNN, RNN or GCN model is not powerful enough to capture the patterns in the training dataset, in other words, they underfit the modified MNIST dataset, to address underfitting, we could try using a bigger neural network by adding new layers or increasing the number of neurons in existing layers or training the models for longer; therefore, I implemented a more sophiscated model-VGG on the dataset, and it turned out to fit the dataset well. </summary>
 
 *References:*  
 [1] https://www.dropbox.com/sh/jn8p1pvpgjy3b9b/AABWc6ouePh2YJFZkGA9zE3ha?dl=0  
